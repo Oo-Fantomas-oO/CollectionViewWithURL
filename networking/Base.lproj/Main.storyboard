@@ -30,6 +30,9 @@
                                     <action selector="getImagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ub1-Qe-psa"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="lFq-qX-lII">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -41,12 +44,15 @@
                             <constraint firstAttribute="bottom" secondItem="P3r-cf-dpu" secondAttribute="bottom" id="Z4R-dc-c21"/>
                             <constraint firstItem="ltB-nA-Fb7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="aNo-Hb-Z8X"/>
                             <constraint firstItem="P3r-cf-dpu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eSo-rm-RfU"/>
+                            <constraint firstItem="lFq-qX-lII" firstAttribute="centerX" secondItem="P3r-cf-dpu" secondAttribute="centerX" id="gXk-Tt-Bxv"/>
                             <constraint firstItem="ltB-nA-Fb7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gp8-10-IpA"/>
+                            <constraint firstItem="lFq-qX-lII" firstAttribute="centerY" secondItem="P3r-cf-dpu" secondAttribute="centerY" id="jfE-d8-dOb"/>
                             <constraint firstItem="P3r-cf-dpu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wFk-tV-3a5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="lFq-qX-lII" id="aaB-MR-6V6"/>
                         <outlet property="getImageButton" destination="kT3-3Y-G0w" id="AZK-1a-9CR"/>
                         <outlet property="imageView" destination="P3r-cf-dpu" id="qvG-K1-yST"/>
                         <outlet property="lable" destination="ltB-nA-Fb7" id="sN9-vu-lf6"/>
